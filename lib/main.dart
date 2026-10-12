@@ -128,8 +128,31 @@ class ProfilePage extends StatelessWidget {
                     ),
                     )
                   ],
-                )
+                ),
 
+                SizedBox(height: 6),
+
+                const Row(
+                  children: [
+                    SizedBox(width: 33),
+                    Icon(
+                      Icons.phone,
+                      color: textColor,
+                      size: 17,
+                    ),
+
+                    SizedBox(width: 8),
+
+                    Text(
+                      "+123 456 7890",
+                      style: TextStyle(
+                        color: textColor,
+                        fontSize: 12
+                      ),
+                    )
+
+                  ],
+                )
               ],
             ),
 
