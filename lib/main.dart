@@ -87,7 +87,23 @@ class ProfilePage extends StatelessWidget {
                     color: Color(0xFF89929B),
                     fontSize: 14
                   ),
-                )
+                ),
+
+                const SizedBox(height: 12),
+
+                const Text(
+                  "Passionate about creating user-friendly and engaging digital experiences.",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: textColor,
+                    fontSize: 13,
+                    height: 1.4
+                  ),
+                ),
+
+                const SizedBox(height: 10),
+
+
               ],
             ),
 
