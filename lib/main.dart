@@ -108,7 +108,27 @@ class ProfilePage extends StatelessWidget {
                   height: 1,
                 ),
 
-                const SizedBox(height: 8)
+                const SizedBox(height: 8),
+
+                const Row(
+                  children: [
+                    SizedBox(width: 33),
+                    Icon(
+                      Icons.email,
+                      size: 17,
+                      color: textColor,
+                    ),
+
+                    SizedBox(width: 8),
+
+                    Text("john.doe@example.com",
+                    style: TextStyle(
+                      color: textColor,
+                      fontSize: 12
+                    ),
+                    )
+                  ],
+                )
 
               ],
             ),
