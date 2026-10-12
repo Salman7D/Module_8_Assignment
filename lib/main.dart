@@ -69,11 +69,20 @@ class ProfilePage extends StatelessWidget {
                     );
                     }
                   ),
+                ),
 
+                const SizedBox(height: 9),
+
+                const Text(
+                  "John Doe",
+                  style: TextStyle(
+                    color: textColor,
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold
+                  ),
                 )
+
               ],
-
-
             ),
 
           )
