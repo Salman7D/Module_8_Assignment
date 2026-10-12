@@ -103,6 +103,12 @@ class ProfilePage extends StatelessWidget {
 
                 const SizedBox(height: 10),
 
+                const Divider(
+                  color: Color(0xFFEEEEEE),
+                  height: 1,
+                ),
+
+                const SizedBox(height: 8)
 
               ],
             ),
