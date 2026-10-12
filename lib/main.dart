@@ -80,8 +80,14 @@ class ProfilePage extends StatelessWidget {
                     fontSize: 22,
                     fontWeight: FontWeight.bold
                   ),
+                ),
+                const Text(
+                  "Flutter Developer",
+                  style: TextStyle(
+                    color: Color(0xFF89929B),
+                    fontSize: 14
+                  ),
                 )
-
               ],
             ),
 
