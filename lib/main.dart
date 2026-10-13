@@ -227,7 +227,42 @@ class ProfilePage extends StatelessWidget {
 
           ),
 
-          SizedBox(height: 10)
+          SizedBox(height: 12),
+          
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 14),
+              child: Row(
+                children: [
+                  const Expanded(
+                      child: Divider(
+                        color: Color(0xFFD6D6D6),
+                      )
+                  ),
+
+                  const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      child: Text(
+                        "Interests",
+                        style: TextStyle(
+                          color: textColor,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          
+                        ),
+                      ),
+                  ),
+                  
+                  const Expanded(
+                      child: Divider(
+                        color: Color(0xFFD6D6D6),
+                      )
+                  )
+                ],
+              ),
+          ),
+
+          SizedBox(height: 10),
+
 
         ],
       ),
