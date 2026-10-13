@@ -187,12 +187,48 @@ class ProfilePage extends StatelessWidget {
                         )
                     ),
 
+                    SizedBox(width: 9),
+
+                    Expanded(
+                        flex: 3,
+                        child: SizedBox(
+                            height: 30,
+                            child: OutlinedButton(
+                                onPressed: (){},
+                                style: OutlinedButton.styleFrom(
+                                  foregroundColor: textColor,
+                                  padding: EdgeInsets.zero,
+                                  side: const BorderSide(
+                                    color: Color(0xFFD5D5D5)
+                                  ),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadiusGeometry.circular(5)
+                                  )
+                                ),
+                                child: Text(
+                                  "Message",
+                                  style: TextStyle(
+                                    color: textColor,
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold
+                                  ),
+                                )
+                            ),
+                        ),
+
+
+                    ),
+
+                    const Spacer()
                   ],
                 )
               ],
             ),
 
-          )
+          ),
+
+          SizedBox(height: 10)
+
         ],
       ),
       )
