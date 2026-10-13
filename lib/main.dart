@@ -263,6 +263,33 @@ class ProfilePage extends StatelessWidget {
 
           SizedBox(height: 10),
 
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                      child: InterestCard(
+                        title: "Travel",
+                        description: "Exploring new places around the world",
+                        imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500",
+                      )
+                  ),
+
+                  SizedBox(width: 12),
+
+                  Expanded(
+                      child: InterestCard(
+                          title: "Photography",
+                          description: "Capturing moments through the lens",
+                          imageUrl: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500"
+                      )
+                  )
+                ],
+              ),
+          ),
+
+          const SizedBox(height: 18)
 
         ],
       ),
@@ -272,4 +299,68 @@ class ProfilePage extends StatelessWidget {
     );
   }
 }
+
+class InterestCard extends StatelessWidget {
+  final String title;
+  final String description;
+  final String imageUrl;
+
+  const InterestCard({
+    super.key,
+    required this.title,
+    required this.description,
+    required this.imageUrl
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(7),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(
+          color: const Color(0xFFEEEEEE)
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.04),
+            blurRadius: 4,
+            offset: const Offset(0, 2)
+          )
+        ]
+      ),
+
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+        ClipRRect(
+          borderRadius: BorderRadiusGeometry.circular(5),
+          child: Image.network(
+              imageUrl,
+            width: double.infinity,
+            height: 83,
+            fit: BoxFit.cover,
+            errorBuilder: (context, error, stackTrace){
+                return Container(
+                  height: 83,
+                  width: double.infinity,
+                  color: Colors.grey.shade300,
+                  child: const Icon(
+                    Icons.image,
+                    size: 35,
+                    color: Colors.white,
+                  ),
+                );
+            },
+          ),
+
+        )
+        ],
+      ),
+    );
+  }
+}
+
+
 
