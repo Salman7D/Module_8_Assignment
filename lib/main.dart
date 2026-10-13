@@ -152,6 +152,42 @@ class ProfilePage extends StatelessWidget {
                     )
 
                   ],
+                ),
+
+                const SizedBox(height: 10),
+
+                Row(
+                  children: [
+                    const Spacer(),
+
+                    Expanded(
+                        flex: 3,
+                        child: SizedBox(
+                          height: 30,
+                          child: ElevatedButton(
+                              onPressed: (){},
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: primaryColor,
+                                elevation: 1,
+                                padding: EdgeInsets.zero,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5)
+                                )
+                              ),
+
+                            child: Text(
+                              "Follow",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 13
+                              ),
+                            ),
+
+                          ),
+                        )
+                    ),
+
+                  ],
                 )
               ],
             ),
