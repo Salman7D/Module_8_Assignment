@@ -355,7 +355,27 @@ class InterestCard extends StatelessWidget {
             },
           ),
 
-        )
+        ),
+
+          SizedBox(height: 7),
+
+          Padding(
+              padding: EdgeInsets.symmetric(horizontal: 5),
+            child: Text(
+              title,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                color: ProfilePage.textColor,
+                fontSize: 14,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+          ),
+
+          SizedBox(height: 5),
+
+
         ],
       ),
     );
