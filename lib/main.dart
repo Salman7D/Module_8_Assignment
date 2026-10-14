@@ -375,6 +375,22 @@ class InterestCard extends StatelessWidget {
 
           SizedBox(height: 5),
 
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 5),
+            child: SizedBox(
+              height: 30,
+              child: Text(
+                description,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  color: Color(0xFF7A838B),
+                  fontSize: 10,
+                ),
+              ),
+            )
+          ),
+
 
         ],
       ),
