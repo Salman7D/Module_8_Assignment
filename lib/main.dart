@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 main(){
@@ -386,11 +387,38 @@ class InterestCard extends StatelessWidget {
                 style: TextStyle(
                   color: Color(0xFF7A838B),
                   fontSize: 10,
+                  height: 1.4
                 ),
               ),
             )
           ),
-
+            SizedBox(height: 7),
+          SizedBox(
+            width: double.infinity,
+            height: 29,
+            child: ElevatedButton(
+                onPressed: (){},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFF3F4F6),
+                  foregroundColor: ProfilePage.primaryColor,
+                  elevation: 0,
+                  padding: EdgeInsets.zero,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
+                    side: const BorderSide(
+                      color: Color(0xFFE9EAEC)
+                    )
+                  )
+                ),
+                child: const Text(
+                  "View More",
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold
+                  ),
+                )
+            ),
+          )
 
         ],
       ),
